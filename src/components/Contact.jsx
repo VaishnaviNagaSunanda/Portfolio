@@ -85,7 +85,7 @@ const Contact = ({ theme }) => {
                                 <div className="w-12 h-12 rounded-lg bg-brown/10 dark:bg-neon-green/10 flex items-center justify-center text-brown dark:text-neon-green group-hover:scale-110 group-hover:shadow-lg transition-all">
                                     <MapPin size={20} />
                                 </div>
-                                <span className="font-medium tracking-wide">Narsapuram</span>
+                                <span className="font-medium tracking-wide">Narsapur, Andhra Pradesh,<br />India</span>
                             </a>
                         </div>
 
