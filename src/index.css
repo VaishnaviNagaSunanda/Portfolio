@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-main: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  @apply bg-cream text-charcoal dark:bg-dark-bg dark:text-gray-100 transition-colors duration-300;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cream dark:bg-dark-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brown dark:bg-neon-green/50 rounded-full;
+  /* Note: primary-color variable usage might be inconsistent, using direct colors is safer with Tailwind utilities */
+  background-color: #884A5B;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #22c55e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-light-brown dark:bg-neon-green;
+}
+
+/* Cursor Follower Styles */
+.cursor-follower {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+
+  .dark .cursor-follower {
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.25) 0%, rgba(34, 197, 94, 0.1) 40%, rgba(0, 0, 0, 0) 70%);
+  }
+
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  transition: opacity 0.3s ease;
+}
+
+
+
+body.cursor-hidden .cursor-follower {
+  opacity: 0;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-new(root) {
+  z-index: 1;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
