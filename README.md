@@ -1,4 +1,4 @@
-# FUTURE_FS_01 - Personal Portfolio Website
+# Personal Portfolio Website
 
 This is a personal portfolio website built with React and Vite.
 
@@ -9,4 +9,4 @@ This is a personal portfolio website built with React and Vite.
 - Framer Motion
 - Three.js / React Three Fiber
 
-Website URL - https://balaji-sri-ram.github.io/Portfolio
+Website URL - [https://balaji-sri-ram.github.io/Portfolio](https://vaishnavinagasunanda.github.io/Portfolio/)
