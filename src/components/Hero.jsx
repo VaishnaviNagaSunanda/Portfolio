@@ -83,7 +83,7 @@ const Hero = ({ theme }) => {
 
                 // Determine Color based on Theme
                 const isLight = theme === 'light';
-                const baseColor = isLight ? '180, 140, 90' : '34, 197, 94';
+                const baseColor = isLight ? '255, 182, 193' : '34, 197, 94';
 
                 setGlowStyle({
                     opacity: strength,
@@ -200,7 +200,7 @@ const Hero = ({ theme }) => {
                             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-brown/10 to-transparent dark:from-neon-green/20 dark:to-transparent blur-lg md:blur-3xl -z-10 animate-pulse"></div>
 
                             {/* Spinning Gradient Border - Enhanced */}
-                            <div className="absolute inset-[-4px] md:inset-[-6px] rounded-full bg-gradient-to-br from-brown via-transparent to-brown dark:from-neon-green dark:via-transparent dark:to-emerald-500 animate-spin-slow opacity-80 mix-blend-screen"></div>
+                            <div className="absolute inset-[-4px] md:inset-[-6px] rounded-full bg-gradient-to-br from-pink-200 via-pink-400 to-pink-700 dark:from-neon-green dark:via-transparent dark:to-emerald-500 animate-spin-slow opacity-80 mix-blend-screen"></div>
 
                             {/* Profile Image */}
                             <img
