@@ -8,7 +8,7 @@ import Experience from './Experience';
 import Contact from './Contact';
 import Navbar from './Navbar';
 import CursorFollower from './CursorFollower';
-import leetcodeImg from '../assets/leetcode.png';
+import { LeetCode } from './LeetCode';
 
 const Home = ({ theme, toggleTheme }) => {
     return (
@@ -49,7 +49,7 @@ const Home = ({ theme, toggleTheme }) => {
                             className="group hover:scale-110 transition-transform"
                             aria-label="LeetCode"
                         >
-                            <img src={leetcodeImg} alt="LeetCode" className="w-6 h-6 filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+                            <LeetCode size={24} />
                         </a>
                         <a
                             href="https://www.instagram.com/vaishnavi_parasa/"
