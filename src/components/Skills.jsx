@@ -64,7 +64,7 @@ const ParallaxText = ({ children, baseVelocity = 100 }) => {
 
 const Skills = ({ theme }) => {
     const spotlightColor = theme === 'light'
-        ? "rgba(180, 140, 90, 0.4)"
+        ? "rgba(255, 182, 193, 0.4)"
         : "rgba(34, 197, 94, 0.4)";
 
     const images = [
